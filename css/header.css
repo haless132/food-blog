@@ -1,0 +1,144 @@
+/* // header // */
+
+/* //top-bar (pink color)// */
+.top-bar {
+    background-color: #ff2a6b;
+}
+.top-bar__row {
+    padding: 18px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .top-bar__row {
+        justify-content: space-between;
+    }
+}
+
+.top-bar__col-left {
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .top-bar__col-left {
+        display: flex;
+    }
+}
+.top-bar__col-left ul {
+    display: flex;
+}
+.top-bar__col-left ul li {
+    margin-right: 40px;
+}
+.top-bar__col-left ul li a {
+    color: #fff;
+}
+
+.top-bar__col-right a,
+span {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* //menu-top// */
+.menu-top {
+    position: relative;
+}
+.menu-top__row {
+    padding: 15px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-top__center {
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .menu-top__center {
+        display: flex;
+    }
+}
+.main-menu {
+    display: flex;
+}
+
+.main-menu li:hover a {
+    color: #ff2a6b;
+}
+.main-menu li a {
+    color: #474747;
+    font-size: 15px;
+    padding: 25px 20px;
+}
+.menu-top__right {
+    display: flex;
+}
+.header-search {
+    margin-right: 15px;
+}
+
+.nav-switch:hover .nav-switch__menu {
+    display: block;
+    transition: 0.25s;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.fa-search {
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+
+    height: 37px;
+    width: 34px;
+    background-color: #ff2a6b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+}
+@media only screen and (min-width: 768px) {
+    .nav-switch {
+        display: none;
+    }
+}
+.fa-bars {
+    border: 1px solid #ddd;
+    height: 38px;
+    width: 38px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+}
+.nav-switch__menu {
+    display: none;
+    background-color: #fff;
+}
+.nav-switch__menu li {
+    width: 375px;
+    padding: 11px;
+    border: 1px solid #ddd;
+}
+.nav-switch__menu li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+.nav-switch__menu li:hover a {
+    color: #ff2a6b;
+    font-weight: bold;
+}

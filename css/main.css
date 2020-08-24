@@ -1,0 +1,43 @@
+.banner {
+    background-image: url(/images/page-top-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 60px 0;
+    border: 1px solid black;
+}
+
+/* .title-white {
+    display: flex;
+    justify-self: center;
+} */
+
+.title-white-h2 {
+    background-color: #ff2a6b;
+
+    max-width: 389px;
+    margin: 0 auto;
+    padding: 0 16px;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 72px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    animation-name: zoom;
+    animation-duration: 1s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

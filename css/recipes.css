@@ -1,0 +1,88 @@
+.title-re {
+    margin-top: 96px;
+    position: relative;
+}
+.title-re h3 {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.title-re h3::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 56px;
+
+    background-color: #ff2a6b;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.recipies {
+    padding: 90px 0;
+}
+.recipies__row {
+    padding: 25px 0;
+}
+.recipies__col {
+    position: relative;
+
+    padding-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+    .recipies__col {
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+}
+.recipies__col > img {
+    vertical-align: middle;
+}
+.content-stars {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 17px 25px 17px 15px;
+    width: 280px;
+    display: inline-block;
+    background-color: #ff2a6b;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.ct {
+    font-size: 16px;
+}
+/* stars */
+.fa-star {
+    color: gold;
+}
+.is-fade {
+    color: whitesmoke;
+}
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 90px;
+}
+
+.buttom {
+    padding: 15px;
+    margin: 5px;
+}
+.buttom a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn-one {
+    background-color: #ff2a6b;
+}
+.btn-two,
+.btn-three {
+    background-color: #cccccc;
+}
