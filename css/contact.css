@@ -1,0 +1,45 @@
+.contact__row.contact__row {
+    padding: 96px 0;
+    align-items: flex-start;
+}
+.title-h4 {
+    margin-bottom: 75px;
+}
+
+.first-col {
+    padding: 10px 145px 10px 25px;
+    border: 0;
+    background-color: #eff3f7;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+.first-col-left {
+    margin-right: 16px;
+}
+.second {
+    padding-top: 20px;
+}
+.second input {
+    padding: 10px 525px 10px 25px;
+    border: 0;
+    background-color: #eff3f7;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.third {
+    padding-top: 20px;
+}
+.third textarea {
+    padding: 20px 0px 10px 10px;
+    border: 0;
+
+    background-color: #eff3f7;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: italic;
