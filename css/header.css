@@ -67,7 +67,9 @@ span {
 
 .main-menu li:hover a {
     color: #ff2a6b;
+    font-weight: bold;
 }
+
 .main-menu li a {
     color: #474747;
     font-size: 15px;
@@ -82,7 +84,7 @@ span {
 
 .nav-switch:hover .nav-switch__menu {
     display: block;
-    transition: 0.25s;
+    transition: all 1s;
     position: absolute;
     top: 100%;
     left: 0;
@@ -123,6 +125,8 @@ span {
     display: none;
     background-color: #fff;
 }
+
+/* / chưa sửa xong!!!!/ */
 .nav-switch__menu li {
     width: 375px;
     padding: 11px;

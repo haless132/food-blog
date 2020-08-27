@@ -45,8 +45,11 @@
     position: absolute;
     bottom: 0px;
     left: 0px;
-    padding: 17px 25px 17px 15px;
+
+    padding: 16px 25px;
     width: 280px;
+    height: 85px;
+
     display: inline-block;
     background-color: #ff2a6b;
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
@@ -54,14 +57,42 @@
 
 .ct {
     font-size: 16px;
+    color: #fff;
 }
 /* stars */
-.fa-star {
+.rating {
+    display: inline-flex;
+    flex-flow: row nowrap;
+
+    margin: 0 -5px;
+    margin-bottom: 50px;
+}
+.rating > li {
+    padding: 0 5px;
+    font-size: 15px;
     color: gold;
 }
-.is-fade {
-    color: whitesmoke;
+.li-end i {
+    color: #fff;
 }
+
+/* # */
+/* .rating {
+    display: inline-flex;
+    flex-flow: row-reverse nowrap;
+
+    margin: 0 -5px;
+}
+.rating > li {
+    padding: 0 5px;
+    font-size: 15px;
+    color: #fff;
+    transition: all 0.25s;
+}
+.rating > li:hover,
+.rating > li:hover ~ li {
+    color: gold;
+} */
 .page {
     display: flex;
     justify-content: center;
