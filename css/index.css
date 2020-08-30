@@ -1,0 +1,470 @@
+.home-banner {
+    background-image: url(/images/slider-bg-2.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 700px;
+    width: 100%;
+}
+.home-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes zoom {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes zoomH2 {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    30% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes zoomH3 {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    30% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.title-h__margin-1 {
+    margin-bottom: 5px;
+}
+.title-h__margin-2 {
+    margin-bottom: 10px;
+}
+.h {
+    border-radius: 5px;
+
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.title-h__margin-1 > h1 {
+    background-color: #ff2a6b;
+    font-size: 45px;
+    line-height: 1.2;
+
+    width: 370px;
+    /* 
+    transition: all 3s ease 0s; */
+    transform: rotate(4deg);
+
+    box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+.title-h__margin-2 > h2 {
+    margin: 0 10px;
+    padding: 5px 0;
+
+    background-color: #fdc856;
+    font-size: 30px;
+
+    position: relative;
+
+    box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+
+    animation-name: zoomH2;
+    animation-duration: 1.2s;
+}
+.title-h__margin-3 > h3 {
+    margin: 0 55px;
+    padding: 10px 0;
+
+    background-color: #bdd364;
+    font-size: 20px;
+
+    box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+
+    animation-name: zoomH3;
+    animation-duration: 2s;
+}
+
+@media only screen and (min-width: 768px) {
+    .title-h__margin-1 > h1 {
+        width: 650px;
+        font-size: 72px;
+    }
+    .title-h__margin-2 > h2 {
+        margin: 0 85px;
+        width: 500px;
+
+        font-size: 48px;
+    }
+    .title-h__margin-3 > h3 {
+        margin: 0 135px;
+        width: 400px;
+
+        font-size: 36px;
+    }
+    .list-and-baner__row.list-and-baner__row {
+        align-items: flex-start;
+    }
+    .title-re {
+        position: relative;
+    }
+}
+.title-re h3 {
+    display: inline-block;
+
+    margin-top: 10px;
+    margin-left: 5px;
+
+    font-size: 36px;
+    font-weight: bold;
+
+    position: relative;
+}
+.title-re h3::before {
+    content: "";
+    height: 5px;
+    width: 56px;
+
+    position: absolute;
+    top: -10px;
+    left: 0px;
+
+    background-color: #ff2a6b;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+/* ***************** */
+
+/* recipies */
+.like-recipies {
+    padding: 90px 0;
+}
+.recipies__row {
+    padding: 25px 0;
+}
+.recipies__col {
+    padding: 0 10px;
+    padding-top: 20px;
+
+    position: relative;
+}
+
+.recipies__col > img {
+    vertical-align: middle;
+}
+.content-stars {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+
+    padding: 16px 25px;
+    width: 280px;
+    height: 85px;
+
+    display: inline-block;
+    background-color: #ff2a6b;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.ct {
+    font-size: 16px;
+    color: #fff;
+}
+/* stars */
+.rating {
+    display: inline-flex;
+    flex-flow: row nowrap;
+
+    margin: 0 -5px;
+    margin-bottom: 50px;
+}
+.rating > li {
+    padding: 0 2px;
+    font-size: 12px;
+    color: gold;
+}
+.li-end i {
+    color: #fff;
+}
+.li-end-1 i {
+    color: #e2e5e6;
+}
+/* ******************************************** */
+/* # */
+/* .rating {
+    display: inline-flex;
+    flex-flow: row-reverse nowrap;
+
+    margin: 0 -5px;
+}
+.rating > li {
+    padding: 0 5px;
+    font-size: 15px;
+    color: #fff;
+    transition: all 0.25s;
+}
+.rating > li:hover,
+.rating > li:hover ~ li {
+    color: gold;
+} */
+/* ********************************************** */
+
+/* list-and-banner */
+
+.list-and-banner {
+    background-color: #f4f7fb;
+    padding: 96px 0;
+}
+/* .list-and-baner__col-left {
+    margin: 96px 0;
+} */
+/* @media only screen and (min-width: 768px) {
+    .list-and-baner__col-center,
+    .list-and-baner__col-right {
+        margin-top: 96px;
+    }
+} */
+.list-and-baner__col-left,
+.list-and-baner__col-center,
+.list-and-baner__col-right {
+    padding: 0 10px;
+}
+
+.list-and-baner__col-left > ul,
+.list-and-baner__col-center > ul {
+    padding: 30px 0x;
+}
+.li-row {
+    display: flex;
+    padding-bottom: 20px;
+}
+.li-row img {
+    height: 77px;
+    width: 77px;
+    margin-right: 15px;
+}
+.recipes-list {
+    height: 77px;
+}
+
+.bg-blog {
+    background-image: url(/images/blog/1.jpg);
+    background-size: cover;
+    height: 345px;
+}
+@media only screen and (min-width: 768px) {
+    .bg-blog {
+        height: 478px;
+    }
+}
+.p1 {
+    color: #ff2a6b;
+}
+.p2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.p3 {
+    text-align: start;
+}
+
+.bg-content {
+    background-color: #fff;
+    box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+
+    position: relative;
+}
+@media only screen and (min-width: 768px) {
+    .bg-content {
+        margin-top: 60px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .list-and-baner__col-right {
+        margin-top: 30px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .list-and-baner__col-right.list-and-baner__col-right {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .list-and-baner__col-right.list-and-baner__col-right {
+        width: 33.33333%;
+    }
+    .bg-blog {
+        height: 252px;
+    }
+}
+.blog-content {
+    padding: 0 30px;
+}
+
+.roll {
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ff2a6b;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.p4 {
+    padding: 16px 30px;
+    width: 60%;
+
+    background-color: #ff2a6b;
+    color: white;
+
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@media only screen and (min-width: 768px) {
+    .p4 {
+        width: 30%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .p4 {
+        width: 50%;
+    }
+}
+/* yellow */
+.yellow {
+    background-color: goldenrod;
+    padding: 65px 0;
+}
+
+.yellow__col {
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.li-row-2 {
+    position: relative;
+    background-color: white;
+}
+@media only screen and (min-width: 768px) {
+    .li-row-2 {
+        display: flex;
+    }
+    .li-row-2 > img {
+        padding: 0;
+    }
+}
+.li-row-2 > img {
+    padding: 20px 90px 0 90px;
+}
+@media only screen and (min-width: 768px) {
+    .li-row-2 > img {
+        height: 200px;
+
+        padding: 0;
+    }
+}
+
+.recipes-list-end {
+    padding: 30px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .recipes-list-end {
+        padding-top: 15px;
+        padding-left: 30px;
+        padding-bottom: 0;
+
+        text-align: left;
+    }
+    .js {
+        display: flex;
+        align-items: center;
+    }
+}
+.js > img {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.rating-end {
+    display: inline-flex;
+    flex-flow: row nowrap;
+
+    margin: 0 -5px;
+    margin-bottom: 15px;
+}
+.rating-end > li {
+    padding: 0 2px;
+    font-size: 12px;
+    color: gold;
+}
+.li-end i {
+    color: #fff;
+}
+.li-end-1 i {
+    color: #e2e5e6;
+}
+.p5 {
+    padding: 5px 15px 5px 10px;
+    width: 35%;
+
+    background-color: #ff2a6b;
+    color: white;
+    font-size: 12px;
+
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    position: absolute;
+    top: 20px;
+    left: 90px;
+}
+@media only screen and (min-width: 768px) {
+    .p5 {
+        width: 15%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .p5 {
+        width: 25%;
+    }
+}

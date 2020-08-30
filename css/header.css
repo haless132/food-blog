@@ -78,8 +78,8 @@ span {
 .menu-top__right {
     display: flex;
 }
-.header-search {
-    margin-right: 15px;
+.nav-switch {
+    margin-left: 15px;
 }
 
 .nav-switch:hover .nav-switch__menu {
@@ -129,7 +129,7 @@ span {
 /* / chưa sửa xong!!!!/ */
 .nav-switch__menu li {
     width: 375px;
-    padding: 11px;
+    padding: 9px;
     border: 1px solid #ddd;
 }
 .nav-switch__menu li a {
