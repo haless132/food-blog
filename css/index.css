@@ -251,12 +251,22 @@
 .list-and-baner__col-left,
 .list-and-baner__col-center,
 .list-and-baner__col-right {
-    padding: 0 10px;
+    padding: 30px 10px;
 }
-
+.list-and-baner__col-left {
+    padding-top: 0;
+}
+@media only screen and (min-width: 768px) {
+    .list-and-baner__col-left {
+        padding-top: 30px;
+    }
+}
 .list-and-baner__col-left > ul,
 .list-and-baner__col-center > ul {
-    padding: 30px 0x;
+    padding: 15px 0x;
+}
+.title-re h3 {
+    padding-bottom: 30px;
 }
 .li-row {
     display: flex;
@@ -305,7 +315,7 @@
 }
 @media only screen and (min-width: 992px) {
     .list-and-baner__col-right {
-        margin-top: 30px;
+        padding-top: 0;
     }
 }
 @media only screen and (min-width: 768px) {
